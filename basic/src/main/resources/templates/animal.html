@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<table border="1">
+		<tr>
+			<th>아이디</th>
+			<th>이름</th>
+			<th>성별</th>
+			<th>종</th>
+		</tr>
+
+		<tr th:each = "animal : ${list}">
+			<td th:text="${animal.id}"></td>
+			<td th:text="${animal.name}"></td>
+			<td th:text="${animal.gender}"></td>
+			<td th:text="${animal.kind}"></td>
+		</tr>
+
+	</table>
+
+</body>
+</html>
